@@ -1,0 +1,96 @@
+Visit this link for code reference- https://github.com/danvega/apache-groovy-course
+
+
+
++Getting started:
+
+groovysh                    ->           groovy shell to run groovy code
+groovyConsole               ->           groovy provided editor/kit for writing groovy code
+
+groovyc filename            ->           compile groovy
+groovy filename             ->           run groovy script/class file
+
+--------------------------------------------------------------------------
+
+
++Groovy basics:
+
+groovy has default imports:
+    import java.lang.*
+    import java.util.*
+    import java.io.*
+    import java.net.*
+    import groovy.lang.*
+    import groovy.util.*
+    import java.math.BigInteger
+    import java.math.BigDecimal
+
+
+groovy Keywords:
+    as          assert      break
+    case        catch       class
+    const       continue    def
+    default     do          else
+    enum        extends     false
+    finally     for         goto
+    implements  import  in  if
+    instanceof  interface   new
+    null        package     return
+    super       switch      this
+    throw       throws      trait
+    true        try         while
+
+
+groovy comments:
+    Single line comment:        //      This is a single line comment
+    Multi-Line comment:
+                                /*      This is
+                                        a multi-line
+                                        comment
+                                */
+    Groovy doc comment: (used for creating documentation for classes and methods)
+                                /**
+                                *       This is a
+                                *       groovy doc comment
+                                */
+    Shebang line comment: (helps groovy script run in a command line directly)
+                                #!/usr/bin/env groovy           ->          used in first line of the program
+                Steps involved for its usage-
+                     Make it executable: chmod +x filemane.groovy
+                     Execute it using: ./filename.groovy
+
+
+assertions:
+    -groovy assertion is called power assertion
+
+    assert [left expression] == [right expression] : (optional message)
+
+
+script:
+    a groovy code thats not written in a class
+
+    >any code written in groovy is automatically converted to a class in the backend including any groovy script code
+
+
+
+groovy class:
+        >by default class id public
+        >class name and file name need not be same(but we usually go with the convention)
+        >we get getters as setters and no args constructor defined by default
+
+        >to get a properties type(typr of a variable) use: variable_name.getClass().getName() or parameter_name.class
+        >  usage of "<<" - left shift operator used to add values on right to left parameter
+
+        >use annotation @groovy.transform.ToString to overload default toString java method to see all parameters
+
+
+
+groovy control structures:
+        > look here for more info - http://groovy-lang.org/semantics.html#_control_structures
+        >look at examples in all_basics.groovy
+
+
+
+
+
+
